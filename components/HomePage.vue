@@ -50,14 +50,6 @@
 <script></script>
 
 <style>
-.centerd {
-  min-height: 100vh;
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-}
 .form {
   max-width: 600px;
   margin: 0 auto;

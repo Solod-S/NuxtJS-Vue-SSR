@@ -1,20 +1,37 @@
 <template>
   <div>
-    <div class="container centerd">
+    <div class="container centered">
       <h1>This is user page</h1>
+    </div>
+    <div class="container">
+      <ul class="userList">
+        <li v-for="user of users" :key="user">
+          <a href="#" @click.prevent="goTo(user)"> User: {{ user }}</a>
+        </li>
+      </ul>
     </div>
   </div>
 </template>
 
-<script></script>
+<script>
+export default {
+  data: () => ({
+    users: [1, 2, 3, 4, 5],
+  }),
+  methods: {
+    goTo(user) {
+      this.$router.push("/users/" + user);
+    },
+  },
+};
+</script>
 
 <style>
-.centerd {
-  min-height: 100vh;
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.centered {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.userList {
   text-align: center;
 }
 </style>

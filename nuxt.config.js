@@ -15,6 +15,7 @@ export default {
       { rel: "icon", type: "image/x-icon", href: "/favicon.ico" },
       { rel: "stylesheet", href: "/css/bootstrap.min.css" },
       { rel: "stylesheet", href: "/css/custom.css" },
+      { rel: "stylesheet", href: "/css/modern-normalize.css" },
     ],
     script: [
       {

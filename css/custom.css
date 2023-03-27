@@ -43,3 +43,8 @@ body {
   justify-content: center;
   text-align: center;
 }
+
+.activeNavTab {
+  font-weight: 700;
+  /* color: mediumslateblue; */
+}

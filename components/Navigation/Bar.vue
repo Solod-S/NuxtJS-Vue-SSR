@@ -35,12 +35,23 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <nuxt-link class="nav-link active" aria-current="page" to="/"
+              <nuxt-link
+                exact
+                active-class="activeNavTab"
+                class="nav-link"
+                aria-current="page"
+                to="/"
                 >Home</nuxt-link
               >
             </li>
             <li class="nav-item">
-              <nuxt-link class="nav-link" to="/users">Users</nuxt-link>
+              <nuxt-link
+                no-prefetch
+                active-class="activeNavTab"
+                class="nav-link"
+                to="/users"
+                >Users</nuxt-link
+              >
             </li>
             <li class="nav-item dropdown">
               <a
@@ -54,7 +65,10 @@
               </a>
               <ul class="dropdown-menu">
                 <li>
-                  <nuxt-link class="dropdown-item" to="aboutcompany"
+                  <nuxt-link
+                    active-class="activeNavTab"
+                    class="dropdown-item"
+                    to="aboutcompany"
                     >Company</nuxt-link
                   >
                 </li>
@@ -86,3 +100,5 @@
   </header>
 </template>
 <script></script>
+
+// no-prefetch disable lazy-loading

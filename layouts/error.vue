@@ -1,7 +1,7 @@
 <template>
   <section>
     <h1>Error 401</h1>
-    <nuxt-link :to="'./'">Home</nuxt-link>
+    <nuxt-link :to="'/'">Home</nuxt-link>
   </section>
 </template>
 <style scoped>

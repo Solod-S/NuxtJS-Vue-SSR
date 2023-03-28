@@ -46,7 +46,6 @@
             </li>
             <li class="nav-item">
               <nuxt-link
-                no-prefetch
                 active-class="activeNavTab"
                 class="nav-link"
                 to="/users"
@@ -72,7 +71,11 @@
                     >Company</nuxt-link
                   >
                 </li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <nuxt-link no-prefetch class="dropdown-item" to="/login"
+                    >Login</nuxt-link
+                  >
+                </li>
                 <li><hr class="dropdown-divider" /></li>
                 <li>
                   <a class="dropdown-item" href="#">Something else here</a>

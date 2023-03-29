@@ -14,14 +14,16 @@ export default {
     //проверка цифр
   },
   // если тру страница будет открыта
-  async asyncData({ params, error, $axios }) {
+  async asyncData({ params, error, $axios, store }) {
     try {
-      const user = await $axios.$get(
-        `https://jsonplaceholder.typicode.com/users/${params.id}`
-      );
+      // const user = await $axios.$get(
+      //   `https://jsonplaceholder.typicode.com/users/${params.id}`
+      // );
+      const user = await store.dispatch("users/fetchUserById", params.id);
+
       return { user };
     } catch (error) {
-      error(e);
+      error(error);
     }
     // return new Promise((resolve, reject) => {
     //   setTimeout(() => {

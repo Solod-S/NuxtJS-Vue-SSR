@@ -20,7 +20,15 @@
     </nav> -->
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">Home</a>
+        <nuxt-link
+          exact
+          active-class="activeNavTab"
+          class="navbar-brand"
+          aria-current="page"
+          to="/"
+          >Home</nuxt-link
+        >
+        <!-- <a class="navbar-brand" href="#">Home</a> -->
         <button
           class="navbar-toggler"
           type="button"
